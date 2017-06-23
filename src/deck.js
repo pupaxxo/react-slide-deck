@@ -181,7 +181,7 @@ class Deck extends Component {
       this.reverseTran();
       return;
     }
-    if (prevWheelDelta !== undefined && Math.abs(delta) / Math.abs(prevWheelDelta) <= 2) return;
+    //if (prevWheelDelta !== undefined && Math.abs(delta) / Math.abs(prevWheelDelta) <= 2) return;
 
     if (prevStatus !== STATUS.NORMAL || delta === 0 || this.isCurrentSlideScrolling({ delta, horizontal })) return;
 
